@@ -1,0 +1,16 @@
+# env
+.env
+
+# virtual env
+.venv/
+
+# python cache
+__pycache__/
+*.pyc
+
+# test outputs
+project/test_results.json
+project/requirement.json
+
+# OS files
+.DS_Store
