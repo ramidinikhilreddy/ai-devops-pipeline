@@ -1,0 +1,6 @@
+openai
+faiss-cpu
+python-dotenv
+numpy
+pytest
+boto3
