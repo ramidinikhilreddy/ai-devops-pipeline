@@ -1,6 +1,9 @@
-openai
-faiss-cpu
-python-dotenv
-numpy
-pytest
+# openai>=1.30.0
+google-genai>=1.0.0
+faiss-cpu>=1.7.4
+python-dotenv>=1.0.1
+numpy>=1.26.0
+pytest>=8.0.0
+flask>=3.0.0
+bcrypt>=4.1.2
 boto3
