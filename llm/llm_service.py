@@ -2,8 +2,8 @@ import os
 from dotenv import load_dotenv
 from google import genai
 
+# Load .env file
 load_dotenv()
-
 
 class LLMService:
     def __init__(self):
@@ -13,12 +13,12 @@ class LLMService:
 
         self.client = genai.Client(api_key=api_key)
 
-    def generate(self, prompt: str, temperature: float = 0.2) -> str:
+    def generate(self, prompt: str) -> str:
         response = self.client.models.generate_content(
             model="gemini-2.5-flash",
             contents=prompt,
         )
 
         text = response.text.strip()
-        text = text.replace("```json", "").replace("```python", "").replace("```", "")
+        text = text.replace("```json", "").replace("```", "")
         return text

@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    container_name: rag-app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    restart: always
+    command: python -m pipeline.test_runner
