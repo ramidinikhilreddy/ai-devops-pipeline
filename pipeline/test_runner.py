@@ -3,6 +3,17 @@ import os
 import subprocess
 import sys
 
+from llm.llm_service import LLMService
+from llm.prompts import (
+    build_requirement_prompt,
+    build_code_prompt,
+    build_fix_prompt,
+)
+
+
+USE_REAL_LLM = False
+MAX_FIX_ATTEMPTS = 2
+
 
 def ensure_directories():
     os.makedirs("project", exist_ok=True)
@@ -14,7 +25,7 @@ def save_file(path: str, content: str):
         f.write(content)
 
 
-def get_requirement_json() -> dict:
+def get_mock_requirement_json() -> dict:
     return {
         "feature_name": "User Registration API",
         "description": "Create an API endpoint to register a new user using their name, email, and password.",
@@ -28,10 +39,7 @@ def get_requirement_json() -> dict:
             {"field": "password", "rule": "Must be at least 8 characters long."},
             {"field": "name", "rule": "Must not be empty."},
         ],
-        "expected_output": (
-            "Return a success response if registration is valid. "
-            "Return an error response if any validation fails."
-        ),
+        "expected_output": "Return a success response if registration is valid. Return an error response if any validation fails.",
         "test_cases": [
             {
                 "scenario": "Successful user registration",
@@ -73,7 +81,7 @@ def get_requirement_json() -> dict:
     }
 
 
-def get_app_code() -> str:
+def get_mock_app_code() -> str:
     return '''from fastapi import FastAPI, status
 from pydantic import BaseModel, Field, EmailStr
 
@@ -94,7 +102,7 @@ class UserRegister(BaseModel):
     )
     password: str = Field(
         ...,
-        min_length=8,
+        min_length=2,
         description="User's chosen password. Must be at least 8 characters long."
     )
 
@@ -115,7 +123,7 @@ async def register_user(user: UserRegister):
 '''
 
 
-def get_test_code() -> str:
+def get_manual_tests() -> str:
     return '''import pytest
 from fastapi.testclient import TestClient
 from project.app import app
@@ -208,12 +216,43 @@ def run_pytest():
     return result.returncode, result.stdout, result.stderr
 
 
+def generate_requirement_and_code(llm: LLMService | None):
+    ticket = """
+    Create an API endpoint to register a user with name, email, and password.
+    Email must be valid. Password must be at least 8 characters.
+    Return success when registration is valid, otherwise return an error.
+    """
+
+    if USE_REAL_LLM and llm is not None:
+        requirement_prompt = build_requirement_prompt(ticket)
+        requirement_response = llm.generate(requirement_prompt)
+        print("\\nRAW LLM OUTPUT (JSON):\\n")
+        print(requirement_response)
+        requirement = json.loads(requirement_response)
+
+        code_prompt = build_code_prompt(requirement)
+        code = llm.generate(code_prompt)
+    else:
+        requirement = get_mock_requirement_json()
+        code = get_mock_app_code()
+
+    return requirement, code
+
+
+def try_fix_code(llm: LLMService, requirement: dict, current_code: str, pytest_output: str):
+    fix_prompt = build_fix_prompt(requirement, current_code, pytest_output)
+    fixed_code = llm.generate(fix_prompt)
+    return fixed_code
+
+
 def main():
     ensure_directories()
 
-    requirement = get_requirement_json()
-    app_code = get_app_code()
-    test_code = get_test_code()
+    llm = None
+    if USE_REAL_LLM:
+        llm = LLMService()
+
+    requirement, code = generate_requirement_and_code(llm)
 
     print("\\nREQUIREMENT JSON:\\n")
     print(json.dumps(requirement, indent=2))
@@ -221,20 +260,51 @@ def main():
     save_file("project/requirement.json", json.dumps(requirement, indent=2))
     print("\\nRequirement saved to project/requirement.json")
 
-    save_file("project/app.py", app_code)
+    save_file("project/app.py", code)
     print("\\nCode saved to project/app.py")
 
-    save_file("project/tests/test_app.py", test_code)
+    manual_tests = get_manual_tests()
+    save_file("project/tests/test_app.py", manual_tests)
     print("\\nTests saved to project/tests/test_app.py")
 
-    returncode, stdout, stderr = run_pytest()
+    attempt_logs = []
 
-    logs = {
-        "returncode": returncode,
-        "stdout": stdout,
-        "stderr": stderr,
-    }
-    save_file("project/test_results.json", json.dumps(logs, indent=2))
+    for attempt in range(MAX_FIX_ATTEMPTS + 1):
+        print(f"\\n=== TEST ATTEMPT {attempt + 1} ===")
+        returncode, stdout, stderr = run_pytest()
+
+        combined_output = stdout
+        if stderr:
+            combined_output += "\\n\\nSTDERR:\\n" + stderr
+
+        attempt_logs.append({
+            "attempt": attempt + 1,
+            "returncode": returncode,
+            "stdout": stdout,
+            "stderr": stderr,
+        })
+
+        if returncode == 0:
+            print("\\nPipeline completed successfully ✅")
+            break
+
+        if attempt == MAX_FIX_ATTEMPTS:
+            print("\\nMax fix attempts reached ❌")
+            break
+
+        if llm is None:
+            print("\\nSkipping auto-fix because USE_REAL_LLM is False.")
+            break
+
+        print("\\nTrying LLM-based auto-fix...")
+
+        current_code = open("project/app.py", "r").read()
+        fixed_code = try_fix_code(llm, requirement, current_code, combined_output)
+
+        save_file("project/app.py", fixed_code)
+        print("\\nFixed code written to project/app.py")
+
+    save_file("project/test_results.json", json.dumps(attempt_logs, indent=2))
     print("\\nPytest logs saved to project/test_results.json")
 
 

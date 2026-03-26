@@ -6,10 +6,9 @@ def build_requirement_prompt(ticket_text: str) -> str:
 Convert the following software requirement into structured JSON.
 
 Return ONLY valid JSON.
-Do not include markdown.
-Do not include explanation text.
+No markdown. No explanation.
 
-Use this exact schema:
+Schema:
 {{
   "feature_name": "",
   "description": "",
@@ -32,52 +31,73 @@ def build_code_prompt(requirement_json: dict) -> str:
     return f"""
 You are a Python backend developer.
 
-Using the requirement JSON below, generate ONLY valid Python code.
+Generate ONLY valid Python FastAPI code.
 
-Rules:
-- Return only Python code
+STRICT RULES:
+- No markdown
+- No explanation
+- Single file
 - Use FastAPI
-- Create one POST endpoint
-- The endpoint path must be /register
-- Use Pydantic models
-- Add validation for email and password length
-- Return HTTP 201 for success
-- Keep the code in a single file
-- Include all required imports
-- Make the code runnable
-- The FastAPI app variable must be named app
+- Endpoint: POST /register
+- Use Pydantic
+- Validate:
+    - name must not be empty
+    - email must be valid
+    - password min length = 8
 
-Requirement JSON:
+RESPONSE FORMAT (VERY IMPORTANT):
+return {{
+    "message": "User registered successfully",
+    "registered_user": {{
+        "name": user.name,
+        "email": user.email
+    }}
+}}
+
+Requirement:
 {requirement_text}
 """
 
 
-def build_test_prompt(requirement_json: dict, generated_code: str) -> str:
+def build_fix_prompt(requirement_json: dict, current_code: str, pytest_output: str) -> str:
     requirement_text = json.dumps(requirement_json, indent=2)
 
     return f"""
-You are a Python QA engineer.
+You are a senior Python backend engineer.
 
-Using the requirement JSON and the FastAPI code below, generate ONLY valid pytest code.
+Your task: FIX the FastAPI code so ALL pytest tests PASS.
 
-Rules:
-- Return only Python code
-- Use pytest
-- Use fastapi.testclient.TestClient
-- Import the app using: from project.app import app
-- Test the /register endpoint
-- Include happy path and validation failure cases
-- For invalid input, expect FastAPI/Pydantic validation behavior
-- DO NOT assert exact full validation messages because they vary by version
-- DO NOT assume tuple locations; validation loc is usually a list
-- Prefer flexible assertions like checking status code, field name in detail.loc, and key message fragments
-- Keep everything in a single file
-- Include all required imports
-- Make the tests runnable
+STRICT RULES:
+- Return ONLY Python code
+- No markdown
+- No explanation
+- Keep FastAPI app name = app
+- Endpoint must be /register
 
-Requirement JSON:
+CRITICAL:
+Response MUST be EXACTLY:
+
+{{
+    "message": "User registered successfully",
+    "registered_user": {{
+        "name": user.name,
+        "email": user.email
+    }}
+}}
+
+VALIDATION RULES:
+- name must not be empty → return 422
+- email must be valid → return 422
+- password min length = 8 → return 422
+
+Requirement:
 {requirement_text}
 
-Generated FastAPI Code:
-{generated_code}
+Current Code:
+{current_code}
+
+Pytest Output:
+{pytest_output}
+
+Fix ALL issues so tests pass.
 """

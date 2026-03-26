@@ -18,7 +18,7 @@ class UserRegister(BaseModel):
     )
     password: str = Field(
         ...,
-        min_length=8,
+        min_length=2,
         description="User's chosen password. Must be at least 8 characters long."
     )
 

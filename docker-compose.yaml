@@ -9,3 +9,4 @@ services:
     volumes:
       - .:/app
     restart: always
+    command: python -m pipeline.test_runner

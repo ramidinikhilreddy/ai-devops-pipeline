@@ -1,6 +1,7 @@
-openai
-faiss-cpu
-python-dotenv
-numpy
+fastapi
+uvicorn
 pytest
-boto3
+httpx
+email-validator
+google-genai
+python-dotenv
