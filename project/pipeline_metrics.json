@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "retries": 1,
+  "with_rag": true,
+  "duration_seconds": 0.713,
+  "risk": {
+    "score": 0.5,
+    "level": "MEDIUM"
+  },
+  "attempts": [
+    {
+      "returncode": 1,
+      "command": [
+        "/Users/nikhilreddy/Desktop/ai-devops-pipeline/.venv/bin/python",
+        "-m",
+        "pytest",
+        "project/tests/test_app.py",
+        "project/tests/test_risk.py",
+        "-v"
+      ],
+      "stdout": "============================= test session starts ==============================\nplatform darwin -- Python 3.11.15, pytest-9.0.2, pluggy-1.6.0 -- /Users/nikhilreddy/Desktop/ai-devops-pipeline/.venv/bin/python\ncachedir: .pytest_cache\nrootdir: /Users/nikhilreddy/Desktop/ai-devops-pipeline\nplugins: anyio-4.13.0\ncollecting ... collected 3 items\n\nproject/tests/test_app.py::test_successful_registration FAILED           [ 33%]\nproject/tests/test_app.py::test_invalid_email_format PASSED              [ 66%]\nproject/tests/test_app.py::test_password_too_short FAILED                [100%]\n\n=================================== FAILURES ===================================\n_________________________ test_successful_registration _________________________\n\n    def test_successful_registration():\n        response = client.post(\"/register\", json={\n            \"name\": \"John Doe\",\n            \"email\": \"john.doe@example.com\",\n            \"password\": \"strongpassword123\"\n        })\n>       assert response.status_code == 201\nE       assert 200 == 201\nE        +  where 200 = <Response [200 OK]>.status_code\n\nproject/tests/test_app.py:12: AssertionError\n___________________________ test_password_too_short ____________________________\n\n    def test_password_too_short():\n        response = client.post(\"/register\", json={\n            \"name\": \"Alice\",\n            \"email\": \"alice@example.com\",\n            \"password\": \"short\"\n        })\n>       assert response.status_code == 422\nE       assert 200 == 422\nE        +  where 200 = <Response [200 OK]>.status_code\n\nproject/tests/test_app.py:28: AssertionError\n=========================== short test summary info ============================\nFAILED project/tests/test_app.py::test_successful_registration - assert 200 =...\nFAILED project/tests/test_app.py::test_password_too_short - assert 200 == 422\n========================= 2 failed, 1 passed in 0.19s ==========================\n",
+      "stderr": ""
+    },
+    {
+      "returncode": 0,
+      "command": [
+        "/Users/nikhilreddy/Desktop/ai-devops-pipeline/.venv/bin/python",
+        "-m",
+        "pytest",
+        "project/tests/test_app.py",
+        "project/tests/test_risk.py",
+        "-v"
+      ],
+      "stdout": "============================= test session starts ==============================\nplatform darwin -- Python 3.11.15, pytest-9.0.2, pluggy-1.6.0 -- /Users/nikhilreddy/Desktop/ai-devops-pipeline/.venv/bin/python\ncachedir: .pytest_cache\nrootdir: /Users/nikhilreddy/Desktop/ai-devops-pipeline\nplugins: anyio-4.13.0\ncollecting ... collected 3 items\n\nproject/tests/test_app.py::test_successful_registration PASSED           [ 33%]\nproject/tests/test_app.py::test_invalid_email_format PASSED              [ 66%]\nproject/tests/test_app.py::test_password_too_short PASSED                [100%]\n\n============================== 3 passed in 0.14s ===============================\n",
+      "stderr": ""
+    }
+  ],
+  "context_chunks": 3
+}

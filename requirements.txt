@@ -5,3 +5,5 @@ httpx
 email-validator
 google-genai
 python-dotenv
+faiss-cpu
+numpy
