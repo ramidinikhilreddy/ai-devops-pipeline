@@ -169,7 +169,7 @@ def run_pipeline(use_real_llm: bool = False, with_rag: bool = True):
 # ---------------- MAIN ----------------
 
 if __name__ == "__main__":
-    result = run_pipeline(use_real_llm=True, with_rag=True)
+    result = run_pipeline(use_real_llm=False, with_rag=True)
 
     print("\n===== PIPELINE FLOW =====\n")
 
