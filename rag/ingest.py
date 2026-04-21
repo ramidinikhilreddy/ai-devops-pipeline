@@ -1,27 +1,35 @@
-from pathlib import Path
-from utils import chunk_text
+from rag.config import SOURCE_DIRS, SUPPORTED_EXTENSIONS
 
-DOCS_DIR = Path("data/project_docs")
 
-def load_and_chunk_documents():
-    chunked_docs = []
+def load_project_files():
+    """
+    Load supported files from the project knowledge base.
+    """
+    documents = []
 
-    for file_path in DOCS_DIR.glob("*"):
-        if file_path.is_file():
-            text = file_path.read_text(encoding="utf-8")
-            chunks = chunk_text(text)
+    for base_dir in SOURCE_DIRS:
+        if not base_dir.exists():
+            continue
 
-            for i, chunk in enumerate(chunks):
-                chunked_docs.append({
-                    "filename": file_path.name,
-                    "chunk_id": i,
-                    "text": chunk
-                })
+        for file_path in base_dir.rglob("*"):
+            if file_path.is_file() and file_path.suffix in SUPPORTED_EXTENSIONS:
+                try:
+                    content = file_path.read_text(encoding="utf-8")
+                    documents.append(
+                        {
+                            "path": str(file_path),
+                            "filename": file_path.name,
+                            "content": content,
+                        }
+                    )
+                except Exception as exc:
+                    print(f"Skipping {file_path}: {exc}")
 
-    return chunked_docs
+    return documents
 
 
 if __name__ == "__main__":
-    chunks = load_and_chunk_documents()
-    for c in chunks:
-        print(c["filename"], c["chunk_id"], c["text"][:80])
+    docs = load_project_files()
+    print(f"Loaded {len(docs)} files.")
+    for doc in docs:
+        print(doc["path"])

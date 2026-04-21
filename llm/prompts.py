@@ -1,82 +1,68 @@
 import json
 
 
-def build_requirement_prompt(ticket_text: str) -> str:
+def build_analyzer_prompt(current_code: str, pytest_output: str) -> str:
     return f"""
-Convert the following software requirement into structured JSON.
+You are a FastAPI debugging agent.
 
-Return ONLY valid JSON.
-No markdown. No explanation.
+Your task is to analyze failing code using these FIXED project rules.
 
-Schema:
+PROJECT RULES (must not be changed):
+- endpoint must be POST /register
+- name must not be empty
+- email must be valid using EmailStr
+- password minimum length must be 8
+- invalid input must return 422
+- successful registration must return 201
+- success response must be exactly:
 {{
-  "feature_name": "",
-  "description": "",
-  "inputs": [],
-  "validations": [],
-  "expected_output": "",
-  "test_cases": []
+  "message": "User registered successfully",
+  "registered_user": {{
+    "name": "user.name",
+    "email": "user.email"
+  }}
 }}
 
-Requirement:
-\"\"\"
-{ticket_text}
-\"\"\"
-"""
+CRITICAL:
+- Focus only on issues that prevent tests from passing
+- Do NOT suggest alternative requirements
+- Do NOT invent new thresholds
+- Do NOT discuss security, best practices, or enhancements unless directly required
+- Return ONLY valid JSON
+- Keep output short and structured
 
-
-def build_code_prompt(requirement_json: dict) -> str:
-    requirement_text = json.dumps(requirement_json, indent=2)
-
-    return f"""
-You are a Python backend developer.
-
-Generate ONLY valid Python FastAPI code.
-
-STRICT RULES:
-- No markdown
-- No explanation
-- Single file
-- Use FastAPI
-- Endpoint: POST /register
-- Use Pydantic
-- Validate:
-    - name must not be empty
-    - email must be valid
-    - password min length = 8
-
-RESPONSE FORMAT (VERY IMPORTANT):
-return {{
-    "message": "User registered successfully",
-    "registered_user": {{
-        "name": user.name,
-        "email": user.email
-    }}
+Return JSON in exactly this format:
+{{
+  "issues": [
+    "..."
+  ],
+  "fix_plan": [
+    "..."
+  ]
 }}
 
-Requirement:
-{requirement_text}
-"""
+Code:
+{current_code}
+
+Pytest Output:
+{pytest_output}
+""".strip()
 
 
-def build_fix_prompt(requirement_json: dict, current_code: str, pytest_output: str) -> str:
-    requirement_text = json.dumps(requirement_json, indent=2)
-
+def build_fixer_prompt(current_code: str, analysis: dict, pytest_output: str) -> str:
     return f"""
 You are a senior Python backend engineer.
 
-Your task: FIX the FastAPI code so ALL pytest tests PASS.
+Fix the FastAPI application so that ALL tests pass.
 
-STRICT RULES:
-- Return ONLY Python code
-- No markdown
-- No explanation
-- Keep FastAPI app name = app
-- Endpoint must be /register
-
-CRITICAL:
-Response MUST be EXACTLY:
-
+PROJECT RULES (must be followed exactly):
+- endpoint must be POST /register
+- app variable name must be exactly: app
+- name must not be empty -> 422
+- email must be valid using EmailStr -> 422
+- password minimum length must be 8 -> 422
+- successful registration must return HTTP 201
+- response body must be exactly:
 {{
     "message": "User registered successfully",
     "registered_user": {{
@@ -85,13 +71,18 @@ Response MUST be EXACTLY:
     }}
 }}
 
-VALIDATION RULES:
-- name must not be empty → return 422
-- email must be valid → return 422
-- password min length = 8 → return 422
+CRITICAL OUTPUT RULES:
+- Return ONE complete Python file
+- Return the full file from first import to last line
+- Do NOT return a patch
+- Do NOT return a diff
+- Do NOT return partial code
+- Do NOT return markdown
+- Do NOT return explanation
+- Output only raw Python code
 
-Requirement:
-{requirement_text}
+Analysis:
+{json.dumps(analysis, indent=2)}
 
 Current Code:
 {current_code}
@@ -99,5 +90,5 @@ Current Code:
 Pytest Output:
 {pytest_output}
 
-Fix ALL issues so tests pass.
-"""
+Rewrite the COMPLETE corrected file now.
+""".strip()
