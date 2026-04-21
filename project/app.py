@@ -1,21 +1,26 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
+from fastapi import FastAPI, status
+from pydantic import BaseModel, EmailStr, Field
 
 app = FastAPI()
 
 
 class UserRegister(BaseModel):
-    name: str
-    email: str
-    password: str
+    name: str = Field(min_length=1, description="Name must not be empty")
+    email: EmailStr
+    password: str = Field(min_length=8, description="Password must be at least 8 characters long")
 
 
-@app.post("/register")
+@app.post("/register", status_code=status.HTTP_201_CREATED)
 def register_user(user: UserRegister):
-    if len(user.password) < 3:
-        return {"error": "password too short"}
+    # Pydantic's BaseModel and Field validation automatically handle
+    # name (not empty), email (valid format), and password (min length 8).
+    # If validation fails, FastAPI will automatically return a 422 Unprocessable Entity.
+    # Therefore, no explicit manual checks are needed here.
 
     return {
-        "msg": "ok",
-        "user": user
+        "message": "User registered successfully",
+        "registered_user": {
+            "name": user.name,
+            "email": user.email
+        }
     }
