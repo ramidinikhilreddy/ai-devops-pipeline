@@ -1,139 +1,220 @@
-# 🚀 AI DevOps Pipeline (Self-Healing LLM System)
+# 🚀 AI DevOps Pipeline (Self-Healing Multi-Agent System)
 
 ## 📌 Overview
-This project implements an AI-driven DevOps pipeline that automatically:
-- Converts requirements → structured JSON
-- Generates backend code (FastAPI)
-- Generates test cases
-- Runs automated tests (pytest)
-- Detects failures
-- Fixes code using LLM feedback
-- Re-runs tests until success
 
-👉 This creates a self-healing software system
+This project implements an **AI-powered DevOps pipeline** that can:
+
+* Read real **Jira tickets**
+* Generate backend code (FastAPI)
+* Run automated tests (pytest)
+* Detect failures
+* Fix code using **LLM agents**
+* Re-run tests until success
+
+👉 Result: A **self-healing system** that converts requirements → working code automatically.
 
 ---
 
 ## 🧠 Core Idea
-Instead of expecting perfect AI-generated code, this system:
-❌ allows failure → 🔍 analyzes errors → 🤖 fixes itself → ✅ ensures correctness
+
+Instead of expecting perfect code from AI:
+
+❌ Failure is allowed
+🔍 Errors are analyzed
+🤖 Code is fixed automatically
+✅ Tests ensure correctness
 
 ---
 
-## ⚙️ Pipeline Flow
+## ⚙️ Full System Flow
 
-Requirement
-   ↓
-LLM → JSON
-   ↓
-LLM → Code (FastAPI)
-   ↓
-Tests (pytest)
-   ↓
-❌ Failure?
-   ↓
-LLM Fix (using logs)
-   ↓
-Re-run tests
-   ↓
+```
+Jira Ticket
+     ↓
+Fetch Requirement
+     ↓
+Run Tests (Fail)
+     ↓
+Analyzer Agent (LLM)
+     ↓
+Fix Plan
+     ↓
+Fixer Agent (LLM)
+     ↓
+Rewrite Full Code
+     ↓
+Run Tests Again
+     ↓
 ✅ PASS
+```
+
+---
+
+## 🤖 Multi-Agent Architecture
+
+The system uses two AI agents:
+
+### 🧠 Analyzer Agent
+
+* Reads:
+
+  * Code
+  * Test failures
+  * Jira ticket
+* Outputs:
+
+  * Issues
+  * Fix plan
+
+---
+
+### 🔧 Fixer Agent
+
+* Uses:
+
+  * Code + Fix Plan
+* Generates:
+
+  * Complete corrected FastAPI file
 
 ---
 
 ## 🏗️ Project Structure
 
+```
 ai-devops-pipeline/
 
-llm/ → LLM service + prompts  
-pipeline/ → main execution logic  
-project/ → generated code + tests  
+llm/            → LLM service, agents, prompts  
+pipeline/       → main pipeline logic  
+project/        → generated FastAPI app + tests  
+scripts/        → reset demo script  
+jira/           → Jira ticket fetch logic  
 
-Dockerfile → container setup  
-docker-compose.yaml → run environment  
-requirements.txt → dependencies  
-.env → API keys  
+.github/        → GitHub Actions (CI)
+
+Dockerfile
+docker-compose.yaml
+requirements.txt
+.env (not committed)
+```
 
 ---
 
 ## 🛠️ Tech Stack
-- Python 3.11
-- FastAPI
-- Pytest
-- Google Gemini (LLM)
-- Docker
-- Git / GitHub
 
----
-
-## 🚀 How to Run
-
-Run Locally:
-python -m pipeline.test_runner
-
-Run with Docker:
-docker-compose up --build
+* Python 3.11
+* FastAPI
+* Pytest
+* Google Gemini (LLM)
+* Jira API
+* Docker
+* GitHub Actions (CI/CD)
 
 ---
 
 ## ⚙️ Configuration
 
-.env file:
-GEMINI_API_KEY=your_api_key_here
+Create a `.env` file:
 
-Toggle LLM usage in test_runner.py:
-USE_REAL_LLM = False   # demo mode
-USE_REAL_LLM = True    # full AI pipeline
+```
+GEMINI_API_KEY=your_key
+GEMINI_MODEL=gemini-2.5-flash
+USE_REAL_LLM=true
 
----
-
-## 🔁 Auto-Fix Loop
-
-If tests fail:
-1. Capture pytest logs
-2. Send logs + code to LLM
-3. Generate fixed code
-4. Re-run tests
-5. Repeat until success
+JIRA_BASE_URL=https://your-domain.atlassian.net
+JIRA_EMAIL=your_email
+JIRA_API_TOKEN=your_token
+JIRA_TICKET_KEY=KAN-1
+```
 
 ---
 
-## 📊 Example Output
+## 🚀 How to Run
 
-TEST ATTEMPT 1 → FAIL ❌
-Trying LLM-based auto-fix...
+### 🔹 Step 1 — Activate environment
 
-TEST ATTEMPT 2 → PASS ✅
+```
+source .venv/bin/activate
+```
 
-Pipeline completed successfully ✅
+---
+
+### 🔹 Step 2 — Reset demo (broken code)
+
+```
+python scripts/reset_demo.py
+```
+
+---
+
+### 🔹 Step 3 — Run pipeline
+
+```
+python -m pipeline.pipeline
+```
+
+---
+
+## 🔁 Example Output
+
+```
+📄 JIRA TICKET FETCHED
+
+Attempt 1 → FAIL ❌
+
+Analyzer Agent → identifies issues  
+Fixer Agent → rewrites code  
+
+Attempt 2 → PASS ✅
+```
+
+---
+
+## 🔄 GitHub Actions (CI)
+
+On every push:
+
+* installs dependencies
+* runs tests
+* verifies correctness
+
+👉 Ensures code is always stable
 
 ---
 
 ## 🔥 Key Features
-- Automated code generation
-- Automated test generation
-- Self-healing fix loop
-- Dockerized execution
-- Failure-driven improvement
+
+* Real Jira ticket integration
+* Multi-agent LLM architecture
+* Full-file code generation
+* Self-healing fix loop
+* Automated testing (pytest)
+* CI/CD with GitHub Actions
 
 ---
 
-## ⚠️ Notes
-- LLM usage depends on API quota
-- Use USE_REAL_LLM = False for demo
-- Docker ensures consistent environment
+## ⚠️ Important Notes
+
+* `.env` is NOT committed (security)
+* LLM usage depends on API quota
+* Use `USE_REAL_LLM=false` for development mode
 
 ---
 
 ## 🎯 Future Improvements
-- Multi-file code generation
-- CI/CD integration
-- UI dashboard
-- RAG integration
-- Local LLM support
+
+* UI Dashboard (in progress)
+* Multi-file code generation
+* Auto PR creation
+* RAG-based context retrieval
+* Local LLM support
 
 ---
 
 ## 🧠 Conclusion
-This project demonstrates how AI can be integrated into DevOps pipelines to build self-correcting, automated software systems.
+
+This project demonstrates how AI can be integrated into DevOps pipelines to build:
+
+> Self-healing, automated, intelligent software systems.
 
 ---
