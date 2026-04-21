@@ -8,8 +8,20 @@ class LLMService:
     def __init__(self):
         load_dotenv()
 
+        use_real_llm = os.getenv("USE_REAL_LLM", "true").strip().lower()
+        self.use_real_llm = use_real_llm == "true"
+
+        self.model_name = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
         api_key = os.getenv("GEMINI_API_KEY")
-        self.model_name = os.getenv("GEMINI_MODEL", "gemini-2.5-pro")
+
+        print(f"USE_REAL_LLM: {self.use_real_llm}")
+        print(f"GEMINI_MODEL: {self.model_name}")
+
+        if not self.use_real_llm:
+            print("⚠️ Real LLM usage is disabled by USE_REAL_LLM=false")
+            self.available = False
+            self.client = None
+            return
 
         if not api_key:
             print("⚠️ No API key found — LLM disabled")
@@ -50,7 +62,7 @@ class LLMService:
 
     def generate(self, prompt: str) -> str:
         if not self.available or self.client is None:
-            print("⚠️ Real LLM is not available.")
+            print("⚠️ Real LLM is disabled or unavailable.")
             return ""
 
         for attempt in range(1, self.max_retries + 1):

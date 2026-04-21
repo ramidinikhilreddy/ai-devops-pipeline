@@ -1,31 +1,68 @@
-def build_fix_prompt(current_code: str, pytest_output: str) -> str:
+import json
+
+
+def build_analyzer_prompt(current_code: str, pytest_output: str) -> str:
+    return f"""
+You are a FastAPI debugging agent.
+
+Your task is to analyze failing code using these FIXED project rules.
+
+PROJECT RULES (must not be changed):
+- endpoint must be POST /register
+- name must not be empty
+- email must be valid using EmailStr
+- password minimum length must be 8
+- invalid input must return 422
+- successful registration must return 201
+- success response must be exactly:
+{{
+  "message": "User registered successfully",
+  "registered_user": {{
+    "name": "user.name",
+    "email": "user.email"
+  }}
+}}
+
+CRITICAL:
+- Focus only on issues that prevent tests from passing
+- Do NOT suggest alternative requirements
+- Do NOT invent new thresholds
+- Do NOT discuss security, best practices, or enhancements unless directly required
+- Return ONLY valid JSON
+- Keep output short and structured
+
+Return JSON in exactly this format:
+{{
+  "issues": [
+    "..."
+  ],
+  "fix_plan": [
+    "..."
+  ]
+}}
+
+Code:
+{current_code}
+
+Pytest Output:
+{pytest_output}
+""".strip()
+
+
+def build_fixer_prompt(current_code: str, analysis: dict, pytest_output: str) -> str:
     return f"""
 You are a senior Python backend engineer.
 
-Task:
-Repair the FastAPI application below so that all pytest tests pass.
+Fix the FastAPI application so that ALL tests pass.
 
-Return:
-- ONE complete corrected Python file
-- From first import to final line
-- Raw Python code only
-- No markdown
-- No explanation
-- No diff
-- No patch
-- No partial snippets
-
-Requirements:
-- Use FastAPI
-- App variable name must be exactly: app
-- Endpoint must be: POST /register
-- Use Pydantic validation
+PROJECT RULES (must be followed exactly):
+- endpoint must be POST /register
+- app variable name must be exactly: app
 - name must not be empty -> 422
-- email must be valid -> 422
+- email must be valid using EmailStr -> 422
 - password minimum length must be 8 -> 422
-- success status code must be 201
-
-Success response body must be exactly:
+- successful registration must return HTTP 201
+- response body must be exactly:
 {{
     "message": "User registered successfully",
     "registered_user": {{
@@ -34,11 +71,24 @@ Success response body must be exactly:
     }}
 }}
 
-Current code:
+CRITICAL OUTPUT RULES:
+- Return ONE complete Python file
+- Return the full file from first import to last line
+- Do NOT return a patch
+- Do NOT return a diff
+- Do NOT return partial code
+- Do NOT return markdown
+- Do NOT return explanation
+- Output only raw Python code
+
+Analysis:
+{json.dumps(analysis, indent=2)}
+
+Current Code:
 {current_code}
 
-Pytest output:
+Pytest Output:
 {pytest_output}
 
-Return the full corrected file now.
+Rewrite the COMPLETE corrected file now.
 """.strip()
