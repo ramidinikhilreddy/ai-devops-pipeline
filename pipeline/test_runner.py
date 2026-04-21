@@ -9,7 +9,7 @@ from llm.prompts import build_requirement_prompt, build_code_prompt, build_fix_p
 # ✅ RAG import
 from rag.retriever import retrieve_context
 
-USE_REAL_LLM = False   # set False if quota issue
+USE_REAL_LLM = True   # set False if quota issue
 MAX_FIX_ATTEMPTS = 2
 
 
