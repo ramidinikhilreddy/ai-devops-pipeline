@@ -92,3 +92,53 @@ Pytest Output:
 
 Rewrite the COMPLETE corrected file now.
 """.strip()
+
+
+def build_pr_summary_prompt(
+    jira_ticket: str,
+    changed_files: list[str],
+    diff_text: str,
+    pytest_output: str,
+    test_passed: bool,
+    retries_used: int,
+) -> str:
+    return f"""
+You are writing a GitHub Pull Request summary for an AI DevOps pipeline run.
+
+Use only the information provided below.
+Do NOT invent unsupported changes.
+Do NOT mention changes that are not visible in the diff or metadata.
+
+Return ONLY plain text in exactly this format:
+
+PR Title: <one line>
+
+Summary:
+- <bullet 1>
+- <bullet 2>
+- <bullet 3>
+
+Tests:
+- Passed: <True/False>
+- Retries used: <number>
+
+Changed Files:
+- <file 1>
+- <file 2>
+
+Jira Requirement:
+{jira_ticket}
+
+Changed Files Input:
+{json.dumps(changed_files, indent=2)}
+
+Git Diff:
+{diff_text}
+
+Pytest Output:
+{pytest_output}
+
+Run Metadata:
+- Tests passed: {test_passed}
+- Retries used: {retries_used}
+""".strip()

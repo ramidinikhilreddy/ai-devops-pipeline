@@ -1,8 +1,24 @@
-PR Title: Implement user registration API pipeline demo
+PR Title: Implement User Registration API
 
-Feature: User Registration API
-Tests passed: False
-Retries used: 2
-RAG enabled: True
-Git repo detected: True
-Current branch: rag-integration-test
+Summary:
+- Implemented user registration API endpoint.
+- Added a FastAPI `/register` endpoint.
+- Included validation for password length.
+
+Tests:
+- Passed: True
+- Retries used: 1
+
+Changed Files:
+- llm/agents.py
+- llm/prompts.py
+- pipeline/git_utils.py
+- pipeline/pipeline.py
+- project/app.py
+- project/llm_last_output.py
+- project/pipeline_metrics.json
+- project/pr_summary.txt
+
+Jira Requirement:
+Create User Registration API
+Create a FastAPI endpoint /register that:

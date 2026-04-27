@@ -35,3 +35,49 @@ def write_demo_summary(path: str, content: str) -> Path:
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(content, encoding="utf-8")
     return output
+
+
+def write_text_file(path: str, content: str) -> Path:
+    output = Path(path)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(content, encoding="utf-8")
+    return output
+
+
+def read_text_file(path: str) -> str:
+    file_path = Path(path)
+    if not file_path.exists():
+        return ""
+    return file_path.read_text(encoding="utf-8")
+
+
+def get_changed_files(cwd: str | None = None) -> list[str]:
+    status = get_git_status(cwd=cwd)
+    if not status.available or not status.inside_repo:
+        return []
+
+    result = _run_git(["diff", "--name-only"], cwd=cwd)
+    if result.returncode != 0:
+        return []
+
+    return [line.strip() for line in result.stdout.splitlines() if line.strip()]
+
+
+def get_diff_text(paths: list[str] | None = None, cwd: str | None = None) -> str:
+    status = get_git_status(cwd=cwd)
+    if not status.available or not status.inside_repo:
+        return ""
+
+    cmd = ["diff"]
+    if paths:
+        cmd.extend(paths)
+
+    result = _run_git(cmd, cwd=cwd)
+    if result.returncode != 0:
+        return ""
+
+    return result.stdout[:12000]
+
+
+def safe_json_write(path: str, data: str) -> Path:
+    return write_text_file(path, data)

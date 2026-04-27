@@ -1,15 +1,19 @@
 from pathlib import Path
 import ast
 import difflib
+import json
+import time
 
 from llm.llm_service import LLMService
 from llm.agents import run_analyzer_agent, run_fixer_agent
 from pipeline.ci_runner import run_pytest
 from jira.fetch_ticket import fetch_jira_ticket
+from pipeline.pr_summary import generate_pr_summary
 
 APP_FILE = Path("project/app.py")
 RAW_OUTPUT_FILE = Path("project/llm_last_output.py")
 BACKUP_FILE = Path("project/app_before_fix.py")
+METRICS_FILE = Path("project/pipeline_metrics.json")
 
 
 def save_file(path: Path, content: str) -> None:
@@ -93,7 +97,18 @@ def load_jira_ticket() -> str:
         return ""
 
 
+def save_metrics(passed: bool, retries_used: int, duration_seconds: float) -> None:
+    metrics = {
+        "passed": passed,
+        "retries": retries_used,
+        "with_rag": True,
+        "duration_seconds": round(duration_seconds, 2),
+    }
+    save_file(METRICS_FILE, json.dumps(metrics, indent=2))
+
+
 def run_pipeline() -> None:
+    start_time = time.time()
     llm = LLMService()
 
     if not APP_FILE.exists():
@@ -108,9 +123,30 @@ def run_pipeline() -> None:
     save_file(BACKUP_FILE, before_code)
 
     result = run_pytest()
+    retries_used = 0
+    final_pytest_output = result.stdout
 
     if result.returncode == 0:
         print("Attempt 1: PASS ✅")
+
+        save_metrics(
+            passed=True,
+            retries_used=0,
+            duration_seconds=time.time() - start_time,
+        )
+
+        if llm.available:
+            summary = generate_pr_summary(
+                llm=llm,
+                jira_ticket=jira_ticket,
+                pytest_output=final_pytest_output,
+                test_passed=True,
+                retries_used=0,
+            )
+            if summary:
+                print("\n===== PR SUMMARY =====\n")
+                print(summary)
+
         print("\n===== SUMMARY =====\n")
         print("Final Result: PASS ✅")
         print("Code already satisfies tests.")
@@ -124,12 +160,16 @@ def run_pipeline() -> None:
     if not llm.available:
         print("⚠️ Real LLM is disabled or unavailable.")
         print("No repair attempt will be made.")
+        save_metrics(
+            passed=False,
+            retries_used=0,
+            duration_seconds=time.time() - start_time,
+        )
         print("\n===== SUMMARY =====\n")
         print("Final Result: FAIL ❌")
         print("Reason: LLM unavailable.")
         return
 
-    # Analyzer Agent
     analysis = run_analyzer_agent(
         llm=llm,
         current_code=before_code,
@@ -137,6 +177,11 @@ def run_pipeline() -> None:
     )
 
     if not analysis:
+        save_metrics(
+            passed=False,
+            retries_used=0,
+            duration_seconds=time.time() - start_time,
+        )
         print("❌ Analyzer failed — stopping")
         print("\n===== SUMMARY =====\n")
         print("Final Result: FAIL ❌")
@@ -146,7 +191,6 @@ def run_pipeline() -> None:
     print("Analyzer Output:")
     print(analysis)
 
-    # Fixer Agent
     fixed_code = run_fixer_agent(
         llm=llm,
         current_code=before_code,
@@ -155,6 +199,11 @@ def run_pipeline() -> None:
     )
 
     if not fixed_code.strip():
+        save_metrics(
+            passed=False,
+            retries_used=0,
+            duration_seconds=time.time() - start_time,
+        )
         print("❌ Fixer failed — stopping")
         print("\n===== SUMMARY =====\n")
         print("Final Result: FAIL ❌")
@@ -165,6 +214,11 @@ def run_pipeline() -> None:
     print_generation_summary(before_code, fixed_code)
 
     if not is_valid_python(fixed_code):
+        save_metrics(
+            passed=False,
+            retries_used=0,
+            duration_seconds=time.time() - start_time,
+        )
         print("❌ Invalid Python generated — stopping")
         print("\n===== SUMMARY =====\n")
         print("Final Result: FAIL ❌")
@@ -172,6 +226,11 @@ def run_pipeline() -> None:
         return
 
     if not looks_like_complete_fastapi_app(fixed_code):
+        save_metrics(
+            passed=False,
+            retries_used=0,
+            duration_seconds=time.time() - start_time,
+        )
         print("❌ Incomplete FastAPI app generated — stopping")
         print("\n===== SUMMARY =====\n")
         print("Final Result: FAIL ❌")
@@ -188,8 +247,28 @@ def run_pipeline() -> None:
     print(f"👉 Raw generated file saved at: {RAW_OUTPUT_FILE}\n")
 
     result = run_pytest()
+    retries_used = 1
+    final_pytest_output = result.stdout
+    test_passed = result.returncode == 0
 
-    if result.returncode == 0:
+    save_metrics(
+        passed=test_passed,
+        retries_used=retries_used,
+        duration_seconds=time.time() - start_time,
+    )
+
+    summary = generate_pr_summary(
+        llm=llm,
+        jira_ticket=jira_ticket,
+        pytest_output=final_pytest_output,
+        test_passed=test_passed,
+        retries_used=retries_used,
+    )
+    if summary:
+        print("\n===== PR SUMMARY =====\n")
+        print(summary)
+
+    if test_passed:
         print("Attempt 2: PASS ✅")
         print("\n===== SUMMARY =====\n")
         print("Final Result: PASS ✅")
