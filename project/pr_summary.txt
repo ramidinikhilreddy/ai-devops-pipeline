@@ -1,0 +1,8 @@
+PR Title: Implement user registration API pipeline demo
+
+Feature: User Registration API
+Tests passed: False
+Retries used: 2
+RAG enabled: True
+Git repo detected: True
+Current branch: rag-integration-test

@@ -1,0 +1,4976 @@
+[
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 0,
+    "text": "# Coding Standards\n\n## Objective\nEnsure generated and human-written code follow a clear and maintainable project structure.\n\n## General Rules\n1. Use meaningful and descriptive function names.\n2. Keep route handlers lightweight.\n3. Business logic must live in the service layer.\n4. Utility functions must be reusable and isolated.\n5. Return JSON responses for API endpoints.\n6. Use consistent naming conventions across files.\n\n## File Organization\n- `routes/` should contain HTTP route handlers."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 1,
+    "text": "ss files.\n\n## File Organization\n- `routes/` should contain HTTP route handlers.\n- `services/` should contain feature logic.\n- `models/` should represent data structures.\n- `utils/` should contain helpers and validators.\n- `tests/` should contain pytest test files.\n\n## Style Guidelines\n- Follow PEP 8 formatting.\n- Prefer small, readable functions.\n- Add docstrings for important functions.\n- Handle errors explicitly.\n- Do not mix validation, hashing, and persistence inside route functions."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 2,
+    "text": "tly.\n- Do not mix validation, hashing, and persistence inside route functions.\n\n## Response Handling\n- Always return structured JSON responses.\n- Use proper HTTP status codes.\n- Keep error responses consistent.\n\n## LLM Code Generation Preference\nGenerated code should:\n- be modular\n- be readable\n- avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 3,
+    "text": "eadable\n- avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 4,
+    "text": "adable\n- avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 5,
+    "text": "dable\n- avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 6,
+    "text": "able\n- avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 7,
+    "text": "ble\n- avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 8,
+    "text": "le\n- avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 9,
+    "text": "e\n- avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 10,
+    "text": "- avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 11,
+    "text": "- avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 12,
+    "text": "avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 13,
+    "text": "avoid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 14,
+    "text": "void unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 15,
+    "text": "oid unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 16,
+    "text": "id unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 17,
+    "text": "d unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 18,
+    "text": "unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 19,
+    "text": "unnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 20,
+    "text": "nnecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 21,
+    "text": "necessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 22,
+    "text": "ecessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 23,
+    "text": "cessary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 24,
+    "text": "essary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 25,
+    "text": "ssary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 26,
+    "text": "sary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 27,
+    "text": "ary complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 28,
+    "text": "ry complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 29,
+    "text": "y complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 30,
+    "text": "complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 31,
+    "text": "complexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 32,
+    "text": "omplexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 33,
+    "text": "mplexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 34,
+    "text": "plexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 35,
+    "text": "lexity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 36,
+    "text": "exity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 37,
+    "text": "xity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 38,
+    "text": "ity\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 39,
+    "text": "ty\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 40,
+    "text": "y\n- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 41,
+    "text": "- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 42,
+    "text": "- align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 43,
+    "text": "align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 44,
+    "text": "align with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 45,
+    "text": "lign with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 46,
+    "text": "ign with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 47,
+    "text": "gn with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 48,
+    "text": "n with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 49,
+    "text": "with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 50,
+    "text": "with the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 51,
+    "text": "ith the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 52,
+    "text": "th the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 53,
+    "text": "h the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 54,
+    "text": "the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 55,
+    "text": "the project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 56,
+    "text": "he project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 57,
+    "text": "e project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 58,
+    "text": "project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 59,
+    "text": "project folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 60,
+    "text": "roject folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 61,
+    "text": "oject folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 62,
+    "text": "ject folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 63,
+    "text": "ect folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 64,
+    "text": "ct folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 65,
+    "text": "t folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 66,
+    "text": "folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 67,
+    "text": "folder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 68,
+    "text": "older structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 69,
+    "text": "lder structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 70,
+    "text": "der structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 71,
+    "text": "er structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 72,
+    "text": "r structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 73,
+    "text": "structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 74,
+    "text": "structure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 75,
+    "text": "tructure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 76,
+    "text": "ructure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 77,
+    "text": "ucture"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 78,
+    "text": "cture"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 79,
+    "text": "ture"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 80,
+    "text": "ure"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 81,
+    "text": "re"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/coding_standards.md",
+    "filename": "coding_standards.md",
+    "chunk_id": 82,
+    "text": "e"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 0,
+    "text": "# Architecture Notes\n\n## Objective\nProvide a simple project architecture that supports clean separation of concerns.\n\n## Layers\n\n### Route Layer\nThe route layer receives the HTTP request, extracts JSON input, and delegates processing to the service layer.\n\n### Service Layer\nThe service layer contains the business logic for registration, including:\n- required field checks\n- email format validation\n- password strength validation\n- duplicate email detection\n- password hashing\n- response generation"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 1,
+    "text": "validation\n- duplicate email detection\n- password hashing\n- response generation\n\n### Utility Layer\nThe utility layer contains reusable helper functions such as:\n- email validation\n- password strength checks\n\n### Model Layer\nThe model layer represents the user object or structure.\n\n## Design Principles\n- Keep each layer focused on one responsibility.\n- Make validation reusable.\n- Keep code testable.\n- Prefer clarity over premature optimization.\n\n## RAG Relevance"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 2,
+    "text": "code testable.\n- Prefer clarity over premature optimization.\n\n## RAG Relevance\nThese architecture notes help the retrieval system provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 3,
+    "text": "rieval system provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 4,
+    "text": "ieval system provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 5,
+    "text": "eval system provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 6,
+    "text": "val system provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 7,
+    "text": "al system provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 8,
+    "text": "l system provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 9,
+    "text": "system provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 10,
+    "text": "system provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 11,
+    "text": "ystem provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 12,
+    "text": "stem provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 13,
+    "text": "tem provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 14,
+    "text": "em provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 15,
+    "text": "m provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 16,
+    "text": "provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 17,
+    "text": "provide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 18,
+    "text": "rovide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 19,
+    "text": "ovide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 20,
+    "text": "vide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 21,
+    "text": "ide structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 22,
+    "text": "de structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 23,
+    "text": "e structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 24,
+    "text": "structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 25,
+    "text": "structure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 26,
+    "text": "tructure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 27,
+    "text": "ructure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 28,
+    "text": "ucture-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 29,
+    "text": "cture-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 30,
+    "text": "ture-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 31,
+    "text": "ure-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 32,
+    "text": "re-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 33,
+    "text": "e-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 34,
+    "text": "-aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 35,
+    "text": "aware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 36,
+    "text": "ware context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 37,
+    "text": "are context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 38,
+    "text": "re context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 39,
+    "text": "e context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 40,
+    "text": "context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 41,
+    "text": "context to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 42,
+    "text": "ontext to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 43,
+    "text": "ntext to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 44,
+    "text": "text to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 45,
+    "text": "ext to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 46,
+    "text": "xt to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 47,
+    "text": "t to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 48,
+    "text": "to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 49,
+    "text": "to the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 50,
+    "text": "o the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 51,
+    "text": "the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 52,
+    "text": "the LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 53,
+    "text": "he LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 54,
+    "text": "e LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 55,
+    "text": "LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 56,
+    "text": "LLM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 57,
+    "text": "LM before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 58,
+    "text": "M before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 59,
+    "text": "before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 60,
+    "text": "before code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 61,
+    "text": "efore code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 62,
+    "text": "fore code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 63,
+    "text": "ore code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 64,
+    "text": "re code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 65,
+    "text": "e code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 66,
+    "text": "code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 67,
+    "text": "code generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 68,
+    "text": "ode generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 69,
+    "text": "de generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 70,
+    "text": "e generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 71,
+    "text": "generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 72,
+    "text": "generation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 73,
+    "text": "eneration."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 74,
+    "text": "neration."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 75,
+    "text": "eration."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 76,
+    "text": "ration."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 77,
+    "text": "ation."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 78,
+    "text": "tion."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 79,
+    "text": "ion."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 80,
+    "text": "on."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 81,
+    "text": "n."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/architecture_notes.md",
+    "filename": "architecture_notes.md",
+    "chunk_id": 82,
+    "text": "."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 0,
+    "text": "# Security Requirements\n\n## Objective\nDefine the minimum security controls required for implementing the user registration feature.\n\n## Requirements\n1. Passwords must never be stored in plaintext.\n2. Passwords must be hashed using `bcrypt`.\n3. User input must be validated before processing.\n4. Invalid or malformed email addresses must be rejected.\n5. Weak passwords must be rejected.\n6. API responses must not expose stack traces or sensitive internal details.\n7."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 1,
+    "text": "6. API responses must not expose stack traces or sensitive internal details.\n7. Inputs must be stripped of unnecessary whitespace where appropriate.\n8. All validation failures must return controlled error messages.\n\n## Recommended Security Practices\n- Use a dedicated password hashing helper.\n- Keep validation logic separate from route handlers.\n- Do not include internal implementation details in client-facing responses.\n- Avoid storing raw request bodies in logs."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 2,
+    "text": "etails in client-facing responses.\n- Avoid storing raw request bodies in logs.\n\n## Security Constraints for LLM-Generated Code\nWhen code is generated for this feature, it must:\n- include password hashing\n- include validation for email and password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 3,
+    "text": "mail and password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 4,
+    "text": "ail and password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 5,
+    "text": "il and password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 6,
+    "text": "l and password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 7,
+    "text": "and password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 8,
+    "text": "and password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 9,
+    "text": "nd password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 10,
+    "text": "d password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 11,
+    "text": "password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 12,
+    "text": "password\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 13,
+    "text": "assword\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 14,
+    "text": "ssword\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 15,
+    "text": "sword\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 16,
+    "text": "word\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 17,
+    "text": "ord\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 18,
+    "text": "rd\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 19,
+    "text": "d\n- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 20,
+    "text": "- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 21,
+    "text": "- avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 22,
+    "text": "avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 23,
+    "text": "avoid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 24,
+    "text": "void hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 25,
+    "text": "oid hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 26,
+    "text": "id hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 27,
+    "text": "d hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 28,
+    "text": "hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 29,
+    "text": "hardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 30,
+    "text": "ardcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 31,
+    "text": "rdcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 32,
+    "text": "dcoded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 33,
+    "text": "coded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 34,
+    "text": "oded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 35,
+    "text": "ded secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 36,
+    "text": "ed secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 37,
+    "text": "d secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 38,
+    "text": "secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 39,
+    "text": "secrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 40,
+    "text": "ecrets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 41,
+    "text": "crets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 42,
+    "text": "rets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 43,
+    "text": "ets\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 44,
+    "text": "ts\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 45,
+    "text": "s\n- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 46,
+    "text": "- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 47,
+    "text": "- avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 48,
+    "text": "avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 49,
+    "text": "avoid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 50,
+    "text": "void printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 51,
+    "text": "oid printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 52,
+    "text": "id printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 53,
+    "text": "d printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 54,
+    "text": "printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 55,
+    "text": "printing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 56,
+    "text": "rinting sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 57,
+    "text": "inting sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 58,
+    "text": "nting sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 59,
+    "text": "ting sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 60,
+    "text": "ing sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 61,
+    "text": "ng sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 62,
+    "text": "g sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 63,
+    "text": "sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 64,
+    "text": "sensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 65,
+    "text": "ensitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 66,
+    "text": "nsitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 67,
+    "text": "sitive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 68,
+    "text": "itive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 69,
+    "text": "tive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 70,
+    "text": "ive user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 71,
+    "text": "ve user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 72,
+    "text": "e user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 73,
+    "text": "user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 74,
+    "text": "user data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 75,
+    "text": "ser data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 76,
+    "text": "er data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 77,
+    "text": "r data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 78,
+    "text": "data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 79,
+    "text": "data"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 80,
+    "text": "ata"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 81,
+    "text": "ta"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/security_requirements.md",
+    "filename": "security_requirements.md",
+    "chunk_id": 82,
+    "text": "a"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 0,
+    "text": "# API Requirements\n\n## Feature Name\nUser Registration API\n\n## Objective\nImplement a backend API endpoint that allows a new user to register with the system using name, email, and password.\n\n## Endpoint\n`POST /register`\n\n## Request Payload\nThe request body must contain:\n- `name` : string\n- `email` : string\n- `password` : string\n\n## Functional Requirements\n1. The API must accept a valid JSON request body.\n2. The API must validate that all required fields are present.\n3."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 1,
+    "text": "request body.\n2. The API must validate that all required fields are present.\n3. The email must follow a valid email format.\n4. The email must be unique in the system.\n5. The password must be at least 8 characters long.\n6. The password must be hashed before being stored.\n7. The API must return a success response when registration is completed.\n8. The API must return meaningful error messages for invalid input.\n\n## Success Response\n- HTTP Status: `201 Created`\n- Response body:\n```json\n{"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 2,
+    "text": "t.\n\n## Success Response\n- HTTP Status: `201 Created`\n- Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 3,
+    "text": "reated`\n- Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 4,
+    "text": "eated`\n- Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 5,
+    "text": "ated`\n- Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 6,
+    "text": "ted`\n- Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 7,
+    "text": "ed`\n- Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 8,
+    "text": "d`\n- Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 9,
+    "text": "`\n- Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 10,
+    "text": "- Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 11,
+    "text": "- Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 12,
+    "text": "Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 13,
+    "text": "Response body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 14,
+    "text": "esponse body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 15,
+    "text": "sponse body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 16,
+    "text": "ponse body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 17,
+    "text": "onse body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 18,
+    "text": "nse body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 19,
+    "text": "se body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 20,
+    "text": "e body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 21,
+    "text": "body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 22,
+    "text": "body:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 23,
+    "text": "ody:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 24,
+    "text": "dy:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 25,
+    "text": "y:\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 26,
+    "text": ":\n```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 27,
+    "text": "```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 28,
+    "text": "```json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 29,
+    "text": "``json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 30,
+    "text": "`json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 31,
+    "text": "json\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 32,
+    "text": "son\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 33,
+    "text": "on\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 34,
+    "text": "n\n{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 35,
+    "text": "{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 36,
+    "text": "{\n  \"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 37,
+    "text": "\"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 38,
+    "text": "\"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 39,
+    "text": "\"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 40,
+    "text": "\"message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 41,
+    "text": "message\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 42,
+    "text": "essage\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 43,
+    "text": "ssage\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 44,
+    "text": "sage\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 45,
+    "text": "age\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 46,
+    "text": "ge\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 47,
+    "text": "e\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 48,
+    "text": "\": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 49,
+    "text": ": \"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 50,
+    "text": "\"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 51,
+    "text": "\"User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 52,
+    "text": "User registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 53,
+    "text": "ser registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 54,
+    "text": "er registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 55,
+    "text": "r registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 56,
+    "text": "registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 57,
+    "text": "registered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 58,
+    "text": "egistered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 59,
+    "text": "gistered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 60,
+    "text": "istered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 61,
+    "text": "stered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 62,
+    "text": "tered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 63,
+    "text": "ered successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 64,
+    "text": "red successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 65,
+    "text": "ed successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 66,
+    "text": "d successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 67,
+    "text": "successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 68,
+    "text": "successfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 69,
+    "text": "uccessfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 70,
+    "text": "ccessfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 71,
+    "text": "cessfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 72,
+    "text": "essfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 73,
+    "text": "ssfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 74,
+    "text": "sfully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 75,
+    "text": "fully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 76,
+    "text": "ully\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 77,
+    "text": "lly\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 78,
+    "text": "ly\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 79,
+    "text": "y\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 80,
+    "text": "\"\n}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 81,
+    "text": "}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/api_requirements.md",
+    "filename": "api_requirements.md",
+    "chunk_id": 82,
+    "text": "}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 0,
+    "text": "# Testing Requirements\n\n## Objective\nDefine the minimum unit testing expectations for the user registration feature.\n\n## Required Test Cases\nThe registration feature must include tests for:\n\n1. Successful user registration\n2. Missing required field\n3. Invalid email format\n4. Weak password\n5. Duplicate email registration\n\n## Testing Framework\n- Use `pytest`\n\n## Testing Rules\n- Tests should be isolated and readable.\n- Each test should validate one clear scenario."
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 1,
+    "text": "hould be isolated and readable.\n- Each test should validate one clear scenario.\n- Assertions should check both HTTP status codes and response messages.\n- Edge cases should be covered where reasonable.\n\n## Expected Outcomes\n\n### Success Case\n- Status code should be `201`\n- Response should confirm successful registration\n\n### Validation Failure\n- Status code should be `400`\n\n### Duplicate Email\n- Status code should be `409`\n\n## LLM Test Generation Guidance\nGenerated tests should:"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 2,
+    "text": "s code should be `409`\n\n## LLM Test Generation Guidance\nGenerated tests should:\n- follow pytest style\n- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 3,
+    "text": "est style\n- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 4,
+    "text": "st style\n- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 5,
+    "text": "t style\n- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 6,
+    "text": "style\n- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 7,
+    "text": "style\n- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 8,
+    "text": "tyle\n- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 9,
+    "text": "yle\n- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 10,
+    "text": "le\n- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 11,
+    "text": "e\n- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 12,
+    "text": "- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 13,
+    "text": "- cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 14,
+    "text": "cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 15,
+    "text": "cover normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 16,
+    "text": "over normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 17,
+    "text": "ver normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 18,
+    "text": "er normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 19,
+    "text": "r normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 20,
+    "text": "normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 21,
+    "text": "normal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 22,
+    "text": "ormal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 23,
+    "text": "rmal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 24,
+    "text": "mal and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 25,
+    "text": "al and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 26,
+    "text": "l and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 27,
+    "text": "and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 28,
+    "text": "and failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 29,
+    "text": "nd failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 30,
+    "text": "d failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 31,
+    "text": "failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 32,
+    "text": "failure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 33,
+    "text": "ailure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 34,
+    "text": "ilure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 35,
+    "text": "lure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 36,
+    "text": "ure cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 37,
+    "text": "re cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 38,
+    "text": "e cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 39,
+    "text": "cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 40,
+    "text": "cases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 41,
+    "text": "ases\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 42,
+    "text": "ses\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 43,
+    "text": "es\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 44,
+    "text": "s\n- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 45,
+    "text": "- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 46,
+    "text": "- use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 47,
+    "text": "use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 48,
+    "text": "use descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 49,
+    "text": "se descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 50,
+    "text": "e descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 51,
+    "text": "descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 52,
+    "text": "descriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 53,
+    "text": "escriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 54,
+    "text": "scriptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 55,
+    "text": "criptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 56,
+    "text": "riptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 57,
+    "text": "iptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 58,
+    "text": "ptive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 59,
+    "text": "tive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 60,
+    "text": "ive test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 61,
+    "text": "ve test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 62,
+    "text": "e test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 63,
+    "text": "test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 64,
+    "text": "test function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 65,
+    "text": "est function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 66,
+    "text": "st function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 67,
+    "text": "t function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 68,
+    "text": "function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 69,
+    "text": "function names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 70,
+    "text": "unction names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 71,
+    "text": "nction names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 72,
+    "text": "ction names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 73,
+    "text": "tion names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 74,
+    "text": "ion names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 75,
+    "text": "on names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 76,
+    "text": "n names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 77,
+    "text": "names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 78,
+    "text": "names"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 79,
+    "text": "ames"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 80,
+    "text": "mes"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 81,
+    "text": "es"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/docs/testing_requirements.md",
+    "filename": "testing_requirements.md",
+    "chunk_id": 82,
+    "text": "s"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 0,
+    "text": "from dataclasses import dataclass\n\n\n@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 1,
+    "text": "ataclass\n\n\n@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 2,
+    "text": "taclass\n\n\n@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 3,
+    "text": "aclass\n\n\n@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 4,
+    "text": "class\n\n\n@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 5,
+    "text": "lass\n\n\n@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 6,
+    "text": "ass\n\n\n@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 7,
+    "text": "ss\n\n\n@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 8,
+    "text": "s\n\n\n@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 9,
+    "text": "@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 10,
+    "text": "@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 11,
+    "text": "@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 12,
+    "text": "@dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 13,
+    "text": "dataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 14,
+    "text": "ataclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 15,
+    "text": "taclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 16,
+    "text": "aclass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 17,
+    "text": "class\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 18,
+    "text": "lass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 19,
+    "text": "ass\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 20,
+    "text": "ss\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 21,
+    "text": "s\nclass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 22,
+    "text": "class User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 23,
+    "text": "class User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 24,
+    "text": "lass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 25,
+    "text": "ass User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 26,
+    "text": "ss User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 27,
+    "text": "s User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 28,
+    "text": "User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 29,
+    "text": "User:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 30,
+    "text": "ser:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 31,
+    "text": "er:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 32,
+    "text": "r:\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 33,
+    "text": ":\n    name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 34,
+    "text": "name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 35,
+    "text": "name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 36,
+    "text": "name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 37,
+    "text": "name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 38,
+    "text": "name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 39,
+    "text": "name: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 40,
+    "text": "ame: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 41,
+    "text": "me: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 42,
+    "text": "e: str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 43,
+    "text": ": str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 44,
+    "text": "str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 45,
+    "text": "str\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 46,
+    "text": "tr\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 47,
+    "text": "r\n    email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 48,
+    "text": "email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 49,
+    "text": "email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 50,
+    "text": "email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 51,
+    "text": "email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 52,
+    "text": "email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 53,
+    "text": "email: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 54,
+    "text": "mail: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 55,
+    "text": "ail: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 56,
+    "text": "il: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 57,
+    "text": "l: str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 58,
+    "text": ": str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 59,
+    "text": "str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 60,
+    "text": "str\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 61,
+    "text": "tr\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 62,
+    "text": "r\n    password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 63,
+    "text": "password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 64,
+    "text": "password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 65,
+    "text": "password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 66,
+    "text": "password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 67,
+    "text": "password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 68,
+    "text": "password: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 69,
+    "text": "assword: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 70,
+    "text": "ssword: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 71,
+    "text": "sword: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 72,
+    "text": "word: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 73,
+    "text": "ord: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 74,
+    "text": "rd: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 75,
+    "text": "d: str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 76,
+    "text": ": str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 77,
+    "text": "str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 78,
+    "text": "str"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 79,
+    "text": "tr"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_model.py",
+    "filename": "user_model.py",
+    "chunk_id": 80,
+    "text": "r"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 0,
+    "text": "from flask import Blueprint, jsonify, request\n\nfrom backend.services.user_service import register_user\n\nuser_bp = Blueprint(\"user_bp\", __name__)\n\n\n@user_bp.route(\"/register\", methods=[\"POST\"])\ndef register():\n    \"\"\"\n    Handle user registration requests.\n    \"\"\"\n    data = request.get_json(silent=True) or {}\n    result = register_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 1,
+    "text": "esult = register_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 2,
+    "text": "sult = register_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 3,
+    "text": "ult = register_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 4,
+    "text": "lt = register_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 5,
+    "text": "t = register_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 6,
+    "text": "= register_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 7,
+    "text": "= register_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 8,
+    "text": "register_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 9,
+    "text": "register_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 10,
+    "text": "egister_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 11,
+    "text": "gister_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 12,
+    "text": "ister_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 13,
+    "text": "ster_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 14,
+    "text": "ter_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 15,
+    "text": "er_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 16,
+    "text": "r_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 17,
+    "text": "_user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 18,
+    "text": "user(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 19,
+    "text": "ser(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 20,
+    "text": "er(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 21,
+    "text": "r(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 22,
+    "text": "(data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 23,
+    "text": "data)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 24,
+    "text": "ata)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 25,
+    "text": "ta)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 26,
+    "text": "a)\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 27,
+    "text": ")\n    return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 28,
+    "text": "return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 29,
+    "text": "return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 30,
+    "text": "return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 31,
+    "text": "return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 32,
+    "text": "return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 33,
+    "text": "return jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 34,
+    "text": "eturn jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 35,
+    "text": "turn jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 36,
+    "text": "urn jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 37,
+    "text": "rn jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 38,
+    "text": "n jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 39,
+    "text": "jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 40,
+    "text": "jsonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 41,
+    "text": "sonify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 42,
+    "text": "onify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 43,
+    "text": "nify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 44,
+    "text": "ify(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 45,
+    "text": "fy(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 46,
+    "text": "y(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 47,
+    "text": "(result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 48,
+    "text": "result[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 49,
+    "text": "esult[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 50,
+    "text": "sult[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 51,
+    "text": "ult[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 52,
+    "text": "lt[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 53,
+    "text": "t[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 54,
+    "text": "[\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 55,
+    "text": "\"body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 56,
+    "text": "body\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 57,
+    "text": "ody\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 58,
+    "text": "dy\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 59,
+    "text": "y\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 60,
+    "text": "\"]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 61,
+    "text": "]), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 62,
+    "text": "), result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 63,
+    "text": ", result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 64,
+    "text": "result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 65,
+    "text": "result[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 66,
+    "text": "esult[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 67,
+    "text": "sult[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 68,
+    "text": "ult[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 69,
+    "text": "lt[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 70,
+    "text": "t[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 71,
+    "text": "[\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 72,
+    "text": "\"status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 73,
+    "text": "status\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 74,
+    "text": "tatus\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 75,
+    "text": "atus\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 76,
+    "text": "tus\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 77,
+    "text": "us\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 78,
+    "text": "s\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 79,
+    "text": "\"]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_routes.py",
+    "filename": "user_routes.py",
+    "chunk_id": 80,
+    "text": "]"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 0,
+    "text": "import re\n\n\ndef is_valid_email(email: str) -> bool:\n    \"\"\"\n    Validate email format using a simple regex.\n    \"\"\"\n    pattern = r\"^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$\"\n    return bool(re.match(pattern, email))\n\n\ndef is_strong_password(password: str) -> bool:\n    \"\"\"\n    Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 1,
+    "text": "\"\"\"\n    Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 2,
+    "text": "\"\"\"\n    Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 3,
+    "text": "\"\"\"\n    Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 4,
+    "text": "\"\"\"\n    Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 5,
+    "text": "\"\"\"\n    Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 6,
+    "text": "\"\"\n    Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 7,
+    "text": "\"\n    Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 8,
+    "text": "Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 9,
+    "text": "Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 10,
+    "text": "Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 11,
+    "text": "Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 12,
+    "text": "Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 13,
+    "text": "Basic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 14,
+    "text": "asic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 15,
+    "text": "sic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 16,
+    "text": "ic password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 17,
+    "text": "c password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 18,
+    "text": "password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 19,
+    "text": "password strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 20,
+    "text": "assword strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 21,
+    "text": "ssword strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 22,
+    "text": "sword strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 23,
+    "text": "word strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 24,
+    "text": "ord strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 25,
+    "text": "rd strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 26,
+    "text": "d strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 27,
+    "text": "strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 28,
+    "text": "strength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 29,
+    "text": "trength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 30,
+    "text": "rength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 31,
+    "text": "ength check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 32,
+    "text": "ngth check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 33,
+    "text": "gth check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 34,
+    "text": "th check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 35,
+    "text": "h check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 36,
+    "text": "check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 37,
+    "text": "check.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 38,
+    "text": "heck.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 39,
+    "text": "eck.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 40,
+    "text": "ck.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 41,
+    "text": "k.\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 42,
+    "text": ".\n    \"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 43,
+    "text": "\"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 44,
+    "text": "\"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 45,
+    "text": "\"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 46,
+    "text": "\"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 47,
+    "text": "\"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 48,
+    "text": "\"\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 49,
+    "text": "\"\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 50,
+    "text": "\"\n    return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 51,
+    "text": "return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 52,
+    "text": "return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 53,
+    "text": "return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 54,
+    "text": "return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 55,
+    "text": "return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 56,
+    "text": "return len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 57,
+    "text": "eturn len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 58,
+    "text": "turn len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 59,
+    "text": "urn len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 60,
+    "text": "rn len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 61,
+    "text": "n len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 62,
+    "text": "len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 63,
+    "text": "len(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 64,
+    "text": "en(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 65,
+    "text": "n(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 66,
+    "text": "(password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 67,
+    "text": "password) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 68,
+    "text": "assword) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 69,
+    "text": "ssword) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 70,
+    "text": "sword) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 71,
+    "text": "word) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 72,
+    "text": "ord) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 73,
+    "text": "rd) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 74,
+    "text": "d) >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 75,
+    "text": ") >= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 76,
+    "text": ">= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 77,
+    "text": ">= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 78,
+    "text": "= 8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 79,
+    "text": "8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/validators.py",
+    "filename": "validators.py",
+    "chunk_id": 80,
+    "text": "8"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 0,
+    "text": "from backend.services.user_service import REGISTERED_USERS, register_user\n\n\ndef setup_function():\n    \"\"\"\n    Reset the in-memory store before each test.\n    \"\"\"\n    REGISTERED_USERS.clear()\n\n\ndef test_successful_user_registration():\n    payload = {\n        \"name\": \"Prakriti\",\n        \"email\": \"prakriti@example.com\",\n        \"password\": \"secure123\",\n    }\n\n    result = register_user(payload)\n\n    assert result[\"status\"] == 201"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 1,
+    "text": "}\n\n    result = register_user(payload)\n\n    assert result[\"status\"] == 201\n    assert result[\"body\"][\"message\"] == \"User registered successfully.\"\n    assert len(REGISTERED_USERS) == 1\n    assert REGISTERED_USERS[0][\"email\"] == \"prakriti@example.com\"\n    assert REGISTERED_USERS[0][\"password\"] != \"secure123\"\n\n\ndef test_missing_required_field():\n    payload = {\n        \"name\": \"Prakriti\",\n        \"email\": \"prakriti@example.com\",\n    }\n\n    result = register_user(payload)"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 2,
+    "text": "\"email\": \"prakriti@example.com\",\n    }\n\n    result = register_user(payload)\n\n    assert result[\"status\"] == 400\n    assert \"required\" in result[\"body\"][\"message\"].lower()\n\n\ndef test_invalid_email_format():\n    payload = {\n        \"name\": \"Prakriti\",\n        \"email\": \"prakriti-email\",\n        \"password\": \"secure123\",\n    }\n\n    result = register_user(payload)\n\n    assert result[\"status\"] == 400\n    assert result[\"body\"][\"message\"] == \"Invalid email format.\"\n\n\ndef test_weak_password():"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 3,
+    "text": "esult[\"body\"][\"message\"] == \"Invalid email format.\"\n\n\ndef test_weak_password():\n    payload = {\n        \"name\": \"Prakriti\",\n        \"email\": \"prakriti@example.com\",\n        \"password\": \"123\",\n    }\n\n    result = register_user(payload)\n\n    assert result[\"status\"] == 400\n    assert \"at least 8 characters\" in result[\"body\"][\"message\"]\n\n\ndef test_duplicate_email_registration():\n    first_payload = {\n        \"name\": \"Prakriti\",\n        \"email\": \"prakriti@example.com\","
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 4,
+    "text": "ayload = {\n        \"name\": \"Prakriti\",\n        \"email\": \"prakriti@example.com\",\n        \"password\": \"secure123\",\n    }\n\n    second_payload = {\n        \"name\": \"Another User\",\n        \"email\": \"prakriti@example.com\",\n        \"password\": \"anothersecure123\",\n    }\n\n    first_result = register_user(first_payload)\n    second_result = register_user(second_payload)\n\n    assert first_result[\"status\"] == 201\n    assert second_result[\"status\"] == 409"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 5,
+    "text": "assert first_result[\"status\"] == 201\n    assert second_result[\"status\"] == 409\n    assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 6,
+    "text": "\"] == 409\n    assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 7,
+    "text": "] == 409\n    assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 8,
+    "text": "== 409\n    assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 9,
+    "text": "== 409\n    assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 10,
+    "text": "= 409\n    assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 11,
+    "text": "409\n    assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 12,
+    "text": "409\n    assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 13,
+    "text": "09\n    assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 14,
+    "text": "9\n    assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 15,
+    "text": "assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 16,
+    "text": "assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 17,
+    "text": "assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 18,
+    "text": "assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 19,
+    "text": "assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 20,
+    "text": "assert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 21,
+    "text": "ssert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 22,
+    "text": "sert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 23,
+    "text": "ert second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 24,
+    "text": "rt second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 25,
+    "text": "t second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 26,
+    "text": "second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 27,
+    "text": "second_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 28,
+    "text": "econd_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 29,
+    "text": "cond_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 30,
+    "text": "ond_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 31,
+    "text": "nd_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 32,
+    "text": "d_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 33,
+    "text": "_result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 34,
+    "text": "result[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 35,
+    "text": "esult[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 36,
+    "text": "sult[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 37,
+    "text": "ult[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 38,
+    "text": "lt[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 39,
+    "text": "t[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 40,
+    "text": "[\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 41,
+    "text": "\"body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 42,
+    "text": "body\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 43,
+    "text": "ody\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 44,
+    "text": "dy\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 45,
+    "text": "y\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 46,
+    "text": "\"][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 47,
+    "text": "][\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 48,
+    "text": "[\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 49,
+    "text": "\"message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 50,
+    "text": "message\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 51,
+    "text": "essage\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 52,
+    "text": "ssage\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 53,
+    "text": "sage\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 54,
+    "text": "age\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 55,
+    "text": "ge\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 56,
+    "text": "e\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 57,
+    "text": "\"] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 58,
+    "text": "] == \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 59,
+    "text": "== \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 60,
+    "text": "== \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 61,
+    "text": "= \"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 62,
+    "text": "\"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 63,
+    "text": "\"Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 64,
+    "text": "Email already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 65,
+    "text": "mail already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 66,
+    "text": "ail already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 67,
+    "text": "il already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 68,
+    "text": "l already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 69,
+    "text": "already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 70,
+    "text": "already exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 71,
+    "text": "lready exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 72,
+    "text": "ready exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 73,
+    "text": "eady exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 74,
+    "text": "ady exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 75,
+    "text": "dy exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 76,
+    "text": "y exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 77,
+    "text": "exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 78,
+    "text": "exists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 79,
+    "text": "xists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 80,
+    "text": "ists.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 81,
+    "text": "sts.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 82,
+    "text": "ts.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 83,
+    "text": "s.\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 84,
+    "text": ".\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/test_user_registration.py",
+    "filename": "test_user_registration.py",
+    "chunk_id": 85,
+    "text": "\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 0,
+    "text": "from typing import Dict\n\nimport bcrypt\n\nfrom backend.utils.validators import is_strong_password, is_valid_email\n\n# Simulated in-memory user store for prototype use.\nREGISTERED_USERS = []\n\n\ndef email_exists(email: str) -> bool:\n    \"\"\"\n    Check whether a user with the given email already exists.\n    \"\"\"\n    normalized_email = email.strip().lower()\n    return any(user[\"email\"] == normalized_email for user in REGISTERED_USERS)\n\n\ndef hash_password(password: str) -> str:\n    \"\"\""
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 1,
+    "text": "or user in REGISTERED_USERS)\n\n\ndef hash_password(password: str) -> str:\n    \"\"\"\n    Hash the password using bcrypt.\n    \"\"\"\n    hashed = bcrypt.hashpw(password.encode(\"utf-8\"), bcrypt.gensalt())\n    return hashed.decode(\"utf-8\")\n\n\ndef register_user(data: Dict) -> Dict:\n    \"\"\"\n    Register a new user after validating the input.\n    \"\"\"\n    name = str(data.get(\"name\", \"\")).strip()\n    email = str(data.get(\"email\", \"\")).strip().lower()\n    password = str(data.get(\"password\", \"\"))"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 2,
+    "text": "get(\"email\", \"\")).strip().lower()\n    password = str(data.get(\"password\", \"\"))\n\n    if not name or not email or not password:\n        return {\n            \"status\": 400,\n            \"body\": {\"message\": \"Name, email, and password are required.\"},\n        }\n\n    if not is_valid_email(email):\n        return {\n            \"status\": 400,\n            \"body\": {\"message\": \"Invalid email format.\"},\n        }\n\n    if not is_strong_password(password):\n        return {\n            \"status\": 400,"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 3,
+    "text": "f not is_strong_password(password):\n        return {\n            \"status\": 400,\n            \"body\": {\"message\": \"Password must be at least 8 characters long.\"},\n        }\n\n    if email_exists(email):\n        return {\n            \"status\": 409,\n            \"body\": {\"message\": \"Email already exists.\"},\n        }\n\n    hashed_password = hash_password(password)\n\n    REGISTERED_USERS.append(\n        {\n            \"name\": name,\n            \"email\": email,\n            \"password\": hashed_password,"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 4,
+    "text": "me\": name,\n            \"email\": email,\n            \"password\": hashed_password,\n        }\n    )\n\n    return {\n        \"status\": 201,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 5,
+    "text": "tatus\": 201,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 6,
+    "text": "atus\": 201,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 7,
+    "text": "tus\": 201,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 8,
+    "text": "us\": 201,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 9,
+    "text": "s\": 201,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 10,
+    "text": "\": 201,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 11,
+    "text": ": 201,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 12,
+    "text": "201,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 13,
+    "text": "201,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 14,
+    "text": "01,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 15,
+    "text": "1,\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 16,
+    "text": ",\n        \"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 17,
+    "text": "\"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 18,
+    "text": "\"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 19,
+    "text": "\"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 20,
+    "text": "\"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 21,
+    "text": "\"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 22,
+    "text": "\"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 23,
+    "text": "\"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 24,
+    "text": "\"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 25,
+    "text": "\"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 26,
+    "text": "\"body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 27,
+    "text": "body\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 28,
+    "text": "ody\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 29,
+    "text": "dy\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 30,
+    "text": "y\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 31,
+    "text": "\": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 32,
+    "text": ": {\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 33,
+    "text": "{\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 34,
+    "text": "{\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 35,
+    "text": "\"message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 36,
+    "text": "message\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 37,
+    "text": "essage\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 38,
+    "text": "ssage\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 39,
+    "text": "sage\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 40,
+    "text": "age\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 41,
+    "text": "ge\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 42,
+    "text": "e\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 43,
+    "text": "\": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 44,
+    "text": ": \"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 45,
+    "text": "\"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 46,
+    "text": "\"User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 47,
+    "text": "User registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 48,
+    "text": "ser registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 49,
+    "text": "er registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 50,
+    "text": "r registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 51,
+    "text": "registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 52,
+    "text": "registered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 53,
+    "text": "egistered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 54,
+    "text": "gistered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 55,
+    "text": "istered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 56,
+    "text": "stered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 57,
+    "text": "tered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 58,
+    "text": "ered successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 59,
+    "text": "red successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 60,
+    "text": "ed successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 61,
+    "text": "d successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 62,
+    "text": "successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 63,
+    "text": "successfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 64,
+    "text": "uccessfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 65,
+    "text": "ccessfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 66,
+    "text": "cessfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 67,
+    "text": "essfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 68,
+    "text": "ssfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 69,
+    "text": "sfully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 70,
+    "text": "fully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 71,
+    "text": "ully.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 72,
+    "text": "lly.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 73,
+    "text": "ly.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 74,
+    "text": "y.\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 75,
+    "text": ".\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 76,
+    "text": "\"},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 77,
+    "text": "},\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 78,
+    "text": ",\n    }"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 79,
+    "text": "}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 80,
+    "text": "}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 81,
+    "text": "}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 82,
+    "text": "}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 83,
+    "text": "}"
+  },
+  {
+    "path": "/Users/nikhilreddy/Desktop/ai-devops-pipeline/backend/user_service.py",
+    "filename": "user_service.py",
+    "chunk_id": 84,
+    "text": "}"
+  }
+]
