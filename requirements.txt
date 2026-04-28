@@ -15,3 +15,4 @@ google-genai
 python-dotenv
 faiss-cpu
 numpy
+streamlit
