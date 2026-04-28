@@ -1,1 +1,18 @@
-{"requirement_json": {"title": "User Registration API", "endpoint": "/register", "method": "POST", "description": "Register a new user with email and password validation.", "validations": ["email must be valid", "password must be at least 8 characters", "duplicate email should be rejected"], "acceptance_criteria": ["accept name, email, password", "return success on valid registration"], "edge_cases": ["duplicate email"], "negative_test_cases": ["invalid email", "short password", "duplicate email"]}, "app_code": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, EmailStr, Field\n\napp = FastAPI()\n\nusers = set()\n\nclass RegisterRequest(BaseModel):\n    name: str\n    email: EmailStr\n    password: str = Field(min_length=8)\n\n@app.post(\"/register\")\ndef register(payload: RegisterRequest):\n    if payload.email in users:\n        raise HTTPException(status_code=400, detail=\"Email already exists\")\n    users.add(payload.email)\n    return {\"message\": \"User registered successfully\"}", "test_code": "from fastapi.testclient import TestClient\nfrom project.app import app\n\nclient = TestClient(app)\n\ndef test_register_success():\n    response = client.post(\"/register\", json={\n        \"name\": \"Test User\",\n        \"email\": \"test@example.com\",\n        \"password\": \"password123\"\n    })\n    assert response.status_code == 200\n    assert response.json()[\"message\"] == \"User registered successfully\"\n\ndef test_register_invalid_email():\n    response = client.post(\"/register\", json={\n        \"name\": \"Test User\",\n        \"email\": \"invalid-email\",\n        \"password\": \"password123\"\n    })\n    assert response.status_code == 422\n\ndef test_register_short_password():\n    response = client.post(\"/register\", json={\n        \"name\": \"Test User\",\n        \"email\": \"shortpass@example.com\",\n        \"password\": \"123\"\n    })\n    assert response.status_code == 422\n\ndef test_register_duplicate_email():\n    payload = {\n        \"name\": \"Dup User\",\n        \"email\": \"dup@example.com\",\n        \"password\": \"password123\"\n    }\n    first = client.post(\"/register\", json=payload)\n    second = client.post(\"/register\", json=payload)\n    assert first.status_code == 200\n    assert second.status_code == 400"}
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel, EmailStr, Field
+
+app = FastAPI()
+
+users = set()
+
+class RegisterRequest(BaseModel):
+    name: str
+    email: EmailStr
+    password: str = Field(min_length=8)
+
+@app.post("/register")
+def register(payload: RegisterRequest):
+    if payload.email in users:
+        raise HTTPException(status_code=400, detail="Email already exists")
+    users.add(payload.email)
+    return {"message": "User registered successfully"}
